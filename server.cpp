@@ -18,7 +18,7 @@ void Server::Connect()
     connect(mainSocket, SIGNAL(disconnected ()), this, SLOT(DisconnectedFromHost()));
     connect(mainSocket, SIGNAL(error( QAbstractSocket::SocketError )), this, SLOT(SocketError( QAbstractSocket::SocketError )));
     connect(mainSocket, SIGNAL(stateChanged ( QAbstractSocket::SocketState )), this, SLOT(SocketStateChanged ( QAbstractSocket::SocketState )));
-    mainSocket->connectToHost (HostIP, HostTCPPort, QIODevice::ReadWrite);
+    ConnectToHost();
 }
 
 void Server::Disconnect()
@@ -33,8 +33,7 @@ void Server::DisconnectFromHost()
 
 void Server::ConnectToHost()
 {
-
-
+    mainSocket->connectToHost(HostIP, HostTCPPort, QIODevice::ReadWrite);
 }
 
 void Server::ConnectedToHost()

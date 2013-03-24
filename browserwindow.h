@@ -2,6 +2,8 @@
 #define BROWSERWINDOW_H
 
 #include <QMainWindow>
+#include <QUrl>
+#include "server.h"
 
 
 namespace Ui {
@@ -21,6 +23,7 @@ private:
 
 public slots:
     void Status(QString status);
+    void UpdateURL(QUrl url);
 
 
 };

@@ -4,6 +4,7 @@
 BrowserWindow::BrowserWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::BrowserWindow)
 {
     ui->setupUi(this);
+    UpdateURL(QUrl("http://" + HostIP +":" + QString(HostWSPort)));
 }
 
 BrowserWindow::~BrowserWindow()
@@ -14,4 +15,9 @@ BrowserWindow::~BrowserWindow()
 void BrowserWindow::Status(QString status)
 {
     ui->statusLabel->setText(status);
+}
+
+void BrowserWindow::UpdateURL(QUrl url)
+{
+    ui->webView->setUrl(url);
 }

@@ -18,6 +18,11 @@ public:
     
 private:
     Ui::BrowserWindow *ui;
+
+public slots:
+    void Status(QString status);
+
+
 };
 
 #endif // BROWSERWINDOW_H

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>495</width>
-    <height>331</height>
+    <width>559</width>
+    <height>447</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,19 +15,24 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
     <item row="0" column="0">
      <widget class="QWebView" name="webView">
       <property name="url">
        <url>
         <string>http://127.0.0.1:8080/</string>
        </url>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="statusLabel">
-      <property name="text">
-       <string/>
       </property>
      </widget>
     </item>
@@ -38,7 +43,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>495</width>
+     <width>559</width>
      <height>25</height>
     </rect>
    </property>

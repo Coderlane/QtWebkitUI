@@ -5,7 +5,6 @@
 #include <QUrl>
 #include "server.h"
 
-
 namespace Ui {
 class BrowserWindow;
 }

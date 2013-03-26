@@ -13,12 +13,14 @@ BrowserWindow::~BrowserWindow()
     delete ui;
 }
 
-void BrowserWindow::Status(QString status)
+void BrowserWindow::Status(QString )
 {
-    ui->statusLabel->setText(status);
+    //Do nothing for now
+    //ui->statusLabel->setText(status);
 }
 
 void BrowserWindow::UpdateURL(QUrl url)
 {
     ui->webView->setUrl(url);
+    this->setWindowTitle(url.toString());
 }
